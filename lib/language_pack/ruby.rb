@@ -83,7 +83,7 @@ class LanguagePack::Ruby < LanguagePack::Base
       Dir.chdir(build_path)
       remove_vendor_bundle
       install_ruby
-      install_jvm
+      install_jvm(forced: true)
       setup_language_pack_environment
       setup_export
       setup_profiled
